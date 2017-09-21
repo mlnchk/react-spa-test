@@ -32,14 +32,14 @@ class Flex extends Component {
 		return (
 			<div className="Flex">
 				<h2 className="Flex__title">Flex</h2>
-				<div className="row">
-					<label htmlFor="fieldA"> Field A: </label>
-					<input className="" id="fieldA" type="text" value={this.setState.value} onChange={this.handleChange} ref="text" />
-					<div className="error" id="error">!!!</div>
+				<div className="Flex__row row">
+					<label className="Flex__label" htmlFor="fieldA"> Field A: </label>
+					<input className="Flex__input" id="fieldA" type="text" value={this.setState.value} onChange={this.handleChange} ref="text" />
+					<div className="error" id="error">ошибка!</div>
 				</div>
-				<div className="row">
-					<label htmlFor="fieldB"> Field B: </label>
-					<input className="" type="text" ref="text" />
+				<div className="Flex__row row">
+					<label className="Flex__label" htmlFor="fieldB"> Field B: </label>
+					<input className="Flex__input" type="text" ref="text" />
 					<span>@example.com</span>
 				</div>
 			</div>

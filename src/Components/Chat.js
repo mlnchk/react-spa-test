@@ -22,7 +22,7 @@ class Chat extends Component {
 
 		let messages = this.state.messages;
 		let message = {text: this.refs.text.value.trim(), type: 'sent', time: time};
-		let message_from = {text: "Абсолютно согласен.", type: 'recieved', time: time};
+		let message_from = {text: "Сообщение принято.", type: 'recieved', time: time};
 		messages.push(message);
 
 		if (navigator.onLine) {
@@ -50,12 +50,11 @@ class Chat extends Component {
 		console.log('items', this.props.items);
 		return (
 			<div className="Chat">
-				<h2 className="Chat__title">Chat</h2>
 				<ul className="Chat__messages">
 					{this.state.messages.map((item, index) =>
 						<li className={"message message_" + item.type} key={index}>
-							<div className="message__date"> {item.time}</div>
 							<div className="message__text">{item.text}</div>
+							<div className="message__date"> {item.time}</div>
 						</li>
 					)}
 				</ul>

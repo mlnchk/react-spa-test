@@ -1,5 +1,19 @@
 .Flex {
-  background: lightblue; }
+  background: #E0DED2;
+  padding: 10px; }
+  .Flex__row {
+    height: 30px;
+    line-height: 30px; }
+  .Flex__input {
+    background: none;
+    border: none;
+    border-bottom: solid 2px grey;
+    margin-right: 10px;
+    margin-left: 10px; }
+    .Flex__input:focus {
+      outline: none; }
 
 .error {
-  display: none; }
+  display: none;
+  border: dashed 1px red;
+  padding: 2px; }

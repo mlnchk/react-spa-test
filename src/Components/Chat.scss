@@ -1,6 +1,6 @@
 .Chat {
   background: beige;
-  padding: 10px;
+  padding-top: 5px;
   &__messages {
     list-style: none;
     margin: 0;
@@ -8,6 +8,8 @@
   }
   &__input {
     box-sizing: border-box;
+    border: 0;
+    height: 40px;
     margin: 0;
     // border: 0;
   }
@@ -15,12 +17,27 @@
 
 .message {
   margin: 10px;
+  overflow: hidden;
   &_sent {
     text-align: right;
+    .message__text {
+      float: right;
+    }
+  }
+  &_received {
+    .message__text {
+      float: left;
+    }
   }
   &__text {
+    position: relative;
     background: lightgreen;
     display: inline-block;
     padding: 10px;
+  }
+  &__date {
+    display: inline;
+    line-height: 38px;
+    padding: 5px;
   }
 }

@@ -1,19 +1,31 @@
 .Chat {
   background: beige;
-  padding: 10px; }
+  padding-top: 5px; }
   .Chat__messages {
     list-style: none;
     margin: 0;
     padding: 0; }
   .Chat__input {
     box-sizing: border-box;
+    border: 0;
+    height: 40px;
     margin: 0; }
 
 .message {
-  margin: 10px; }
+  margin: 10px;
+  overflow: hidden; }
   .message_sent {
     text-align: right; }
+    .message_sent .message__text {
+      float: right; }
+  .message_received .message__text {
+    float: left; }
   .message__text {
+    position: relative;
     background: lightgreen;
     display: inline-block;
     padding: 10px; }
+  .message__date {
+    display: inline;
+    line-height: 38px;
+    padding: 5px; }
