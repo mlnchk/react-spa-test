@@ -1,0 +1,13 @@
+.Menu {
+  text-align: center;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+  }
+}

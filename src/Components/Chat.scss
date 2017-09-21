@@ -1,0 +1,26 @@
+.Chat {
+  background: beige;
+  padding: 10px;
+  &__messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__input {
+    box-sizing: border-box;
+    margin: 0;
+    // border: 0;
+  }
+}
+
+.message {
+  margin: 10px;
+  &_sent {
+    text-align: right;
+  }
+  &__text {
+    background: lightgreen;
+    display: inline-block;
+    padding: 10px;
+  }
+}

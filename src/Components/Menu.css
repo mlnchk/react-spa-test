@@ -1,0 +1,10 @@
+.Menu {
+  text-align: center; }
+  .Menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .Menu__item {
+    background: #fff;
+    margin: 10px;
+    padding: 10px; }
